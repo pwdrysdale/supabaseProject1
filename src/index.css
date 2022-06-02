@@ -10,6 +10,7 @@ button, button[type='submit'], input[type='submit'], select, textarea {
     @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
 }
 
+
 .tag {
     @apply bg-gray-200 text-gray-700 rounded-full px-3 py-1;
 }
@@ -20,4 +21,8 @@ button, button[type='submit'], input[type='submit'], select, textarea {
 
 .incomplete-tag {
     @apply bg-red-500 text-white cursor-pointer;
+}
+
+input[type='text'] {
+    @apply dark:bg-gray-800 dark:text-white;
 }

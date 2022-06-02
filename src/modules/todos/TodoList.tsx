@@ -21,7 +21,7 @@ const TodoList = () => {
         const {data, error} = await supabase.from<Todo>('todos').update({
             completed_at: todo?.completed_at ? null : new Date()
         }).eq('id', id).single()
-        
+
         if (data) {
             setTodos(todos.map((todo: Todo) => todo.id === id ? data : todo))
         }
